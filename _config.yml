@@ -12,8 +12,8 @@ defaults:
 logo: "/assets/media/robotics-logo.svg"
 favicon_ico: "/assets/media/mbot-logo.png"
 math: katex
-url: "https://mbot-internal-docs.github.io/mbot-internal-docs-template"
-baseurl: "" 
+url: "https://mbot-internal-docs.github.io/mbot-internal-docs-template/"
+baseurl: "/mbot-internal-docs-template" 
 enable_copy_code_button: false
 
 # Aux links for the upper right navigation

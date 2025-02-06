@@ -11,7 +11,7 @@ nav_order: 2
 
 ## How to edit
 
-Please check the post here: [How to edit](/docs/how-to-edit)
+Please check the post here: [How to edit]({{ site.baseurl }}/docs/how-to-edit)
 
 ## How to add new posts or a new level
 ### Add single page on the top level
@@ -68,6 +68,17 @@ parent: Example 2nd Folder
 ```
   Again you need to define the parent so it knows which folder it belongs to.
 
+## How to add a new repository
+1. Use [mbot-internal-docs-template](https://github.com/mbot-internal-docs/mbot-internal-docs-template) as template
+2. Enter your desired name, should be the course number like `rob550`
+3. Remember to change the urls under `_config.yml` to your repo's name
+```yml
+url: "https://mbot-internal-docs.github.io/<your-repo-name>/"
+baseurl: "/<your-repo-name>" 
+aux_links: 
+  GitHub Repository: https://github.com/mbot-internal-docs/<your-repo-name>
+```
+
 ## Feaures
 ### Image pop up feature
 
@@ -75,19 +86,19 @@ Here we use [magnific-popup](https://dimsemenov.com/plugins/magnific-popup/) plu
 
 #### Single image
 
-<a class="image-link" href="/assets/media/mbot-logo.png">
-  <img src="/assets/media/mbot-logo.png" alt="Image Description" width="75">
+<a class="image-link" href="{{ site.baseurl }}/assets/media/mbot-logo.png">
+  <img src="{{ site.baseurl }}/assets/media/mbot-logo.png" alt="Image Description" width="75">
 </a>
 
 You only need to define the width, the height is autofit.
 
 #### Image gallery
 <div class="popup-gallery">
-  <a href="/assets/media/mbot-logo.png">
-    <img src="/assets/media/mbot-logo.png" alt="Image Description"  width="75"> 
+  <a href="{{ site.baseurl }}/assets/media/mbot-logo.png">
+    <img src="{{ site.baseurl }}/assets/media/mbot-logo.png" alt="Image Description"  width="75"> 
   </a>
-  <a href="/assets/media/mbot-logo.png">
-    <img src="/assets/media/mbot-logo.png" alt="Image Description"  width="75">
+  <a href="{{ site.baseurl }}/assets/media/mbot-logo.png">
+    <img src="{{ site.baseurl }}/assets/media/mbot-logo.png" alt="Image Description"  width="75">
   </a>
 </div>
 
