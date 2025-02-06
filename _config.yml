@@ -12,7 +12,7 @@ defaults:
 logo: "/assets/media/robotics-logo.svg"
 favicon_ico: "/assets/media/mbot-logo.png"
 math: katex
-url: ""
+url: "https://mbot-internal-docs.github.io/mbot-internal-docs-template"
 baseurl: "" 
 enable_copy_code_button: false
 
